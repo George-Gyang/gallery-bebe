@@ -24,8 +24,9 @@ var slider = tns({
     items: 2,
     edgePadding: 10,
     gutter: 20,
-
+    // autoPlayButton: false,
     slideBy: 'page',
+    autoplayButtonOutput : false,
     autoplay: true,
     navPosition: "bottom",
     controls: false,
@@ -43,7 +44,7 @@ var sliderTwo = tns({
     items: 2,
     // edgePadding: 10,
     gutter: 40,
-
+    autoplayButtonOutput : false,
     slideBy: 'page',
     autoplay: true,
     navPosition: "bottom",
@@ -57,25 +58,6 @@ var sliderTwo = tns({
     }
 });
 
-// var sliderTwo = tns({
-//     container: '.my-slider-1',
-//     items: 2,
-//     edgePadding: 10,
-//     gutter: 20,
-//     autoplayTimeout:4000,
-//     slideBy: 'page',
-//     autoplay: true,
-//     navPosition: "bottom",
-//     controls: false,
-//     responsive: {
-//         700: {
-//             edgePadding: 20,
-//             gutter: 20,
-//             items: 6
-//         }
-//     }
-// });
-
 var myLogo = tns({
     container: '.my-logo',
     items: 2,
@@ -84,6 +66,7 @@ var myLogo = tns({
     autoplayTimeout:4000,
     slideBy: 2,
     autoplay: true,
+    autoplayButtonOutput : false,
     autoplayPosition: "autoplay",
     controlsPosition: "bottom",
     navPosition: "bottom",
