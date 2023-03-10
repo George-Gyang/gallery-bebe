@@ -1,5 +1,6 @@
 body {
   /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Montserrat, sans-serif, "Franklin Gothic Medium";
 }
 
 .flex-container {
@@ -29,7 +30,7 @@ body {
 }
 
 .hover-img {
-  filter: brightness(50%);
+  filter: brightness(70%);
 }
 
 .to-front {
@@ -39,7 +40,7 @@ body {
   /* /* background-color: black; */
   color: white;
 }
-.hover-zoom {
+.overwrite {
   position: relative;
 }
 
@@ -51,6 +52,108 @@ body {
   /* background-image: url("bundles\images\landing\bg-image.jpg"); */
   background-image: url("bundles/images/landing/bg-image.jpg");
   background-size: cover;
+}
+
+/* HOVER BEGINS */
+
+.hovereffect {
+  /* width: 100%;
+  height: 100%;
+  float: left; */
+  /* overflow: hidden; */
+  position: relative;
+  /* text-align: center;
+  cursor: default; */
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  /* overflow: hidden; */
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  /* border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff; */
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  /* filter: url("bundles/images/landing/card-cover-2.jpg"); */
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  /* text-align: center; */
+  position: relative;
+  /* font-size: 17px; */
+  background-color: transparent;
+  color: #fff;
+  /* padding: 1em 0; */
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+.hovereffect .div,
+.hovereffect p {
+  /* color: #fff; */
+  padding-top: 4em ;
+  margin: auto;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+.hovereffect:hover .div,
+.hovereffect:hover p,
+.hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* ENDS */
+
+.card-icons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-icons div{
+  display: inline-block;
+  background-color: white;
+  height: fit-content;
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 
 .dept-head-6 {
@@ -79,14 +182,13 @@ height: fit-content;
 margin-left: 0.5rem;
 } */
 
-.firstclass{
+.firstclass {
   align-self: self-end;
 }
 
 .icon-body img {
   padding: 3rem;
 }
-
 
 .icon-bg-1 {
   background-color: #c24244;

@@ -74,9 +74,9 @@ var myLogo = tns({
     autoplayText:[ "▶","❚❚"],
     responsive: {
         700: {
-            edgePadding: 20,
-            gutter: 20,
-            items: 6
+            // edgePadding: 2,
+            gutter: 10,
+            items: 8
         }
     }
 });
