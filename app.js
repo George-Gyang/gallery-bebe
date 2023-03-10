@@ -21,7 +21,7 @@
 
 var slider = tns({
     container: '.my-slider',
-    items: 2,
+    items: 1,
     edgePadding: 10,
     gutter: 20,
     // autoPlayButton: false,
