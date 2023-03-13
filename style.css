@@ -25,6 +25,11 @@ body {
   color: black;
 }
 
+ul .nav-link{
+  font-weight:bolder;
+  /* color: red; */
+}
+
 .center-img {
   max-height: 390px;
 }
@@ -211,6 +216,19 @@ margin-left: 0.5rem;
 
 footer {
   background-color: #ebf5fa;
+}
+
+.fw-bold{
+  font-weight: 900 !important;
+  color: black !important;
+}
+
+
+.login-span{
+  font-size: 1.5rem;
+  font-weight:900;
+  padding-bottom: 1rem;
+  color: black;
 }
 
 @media (max-width: 768px) {

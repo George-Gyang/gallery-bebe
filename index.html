@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
 
   <!-- MDB -->
   <link rel="stylesheet" href="css/mdb.min.css" />
@@ -59,14 +60,24 @@
         <div class="d-flex justify-content-between">
           <p class="d-none d-lg-block ">Collection point</p>
           <p class="d-none d-lg-block mx-2">Welcome User</p>
-          <div>
-            <select style="border: black;" class="form-slect me-md-3 bg-dark text-white"
+          <div style="margin-top: -0.3rem;">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle me-md-3 bg-dark text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                My Account
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="reg.html">Register</a></li>
+                <li><a class="dropdown-item" href="log.html">Log in</a></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
+            <!-- <select style="border: black;" class="form-slect me-md-3 bg-dark text-white"
               aria-label="Default select example">
               <option selected>My Account</option>
-              <option value="1">Register</option>
-              <option value="2">Log in</option>
+              <option value="1"><a href="reg.html">Register</a></option>
+              <option value="2"><a href="log.html">Login</a></option>
               <option value="3">Sign out</option>
-            </select>
+            </select> -->
           </div>
         </div>
 
@@ -74,7 +85,7 @@
     </div>
 
     <div class="header_middle">
-      <div class="p-3 text-center bg-white text-dark">
+      <div class="py-2 text-center border-bottom bg-white text-dark">
         <div class="container">
           <div class="row">
             <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
@@ -84,15 +95,15 @@
             </div>
 
             <div class="col-md-4">
-              <form class="d-flex w-auto my-auto mb-3 mb-md-0">
+              <form class="d-flex mt-2 w-auto my-auto mb-3 mb-md-0">
                 <!-- <input autocomplete="off" type="search" class="form-control rounded" placeholder="Search" /> -->
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
+                <select style="border-radius: 0px;" class="form-select" aria-label="Default select example">
+                  <option selected>Search</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
-                <span class="input-group-text pb-2 bg-primary  border-0 d-lg-flex"><i
+                <span  style="border-radius: 0px;" class="input-group-text pb-2 bg-primary  border-0 d-lg-flex"><i
                     class="fas fa-search text-white"></i></span>
               </form>
             </div>
@@ -123,7 +134,7 @@
                 </div>
 
                 <!-- Notification -->
-                <a class="text-reset me-3" href="#">
+                <a class="text-reset mt-2 me-3" href="#">
                   <img src="bundles/images/lit-icons/carts 1.png" alt="">
                   <!-- <span><i class="fas fa-shopping-cart"></i></span> -->
                   <!-- <span class="badge rounded-pill badge-notification bg-danger">1</span> -->
@@ -188,7 +199,7 @@
             </div>
           </div>
         </div>
-        <hr>
+        <!-- <hr> -->
       </div>
     </div>
     <!-- Jumbotron -->
@@ -264,7 +275,7 @@
 
           <!-- Single item -->
           <div class="carousel-item">
-            <img src="bundles/images/landing/bg-image.jpg" class="d-block w-100" alt="Canyon at Nigh" />
+            <img src="bundles/images/landing/bg-image-2.png" class="d-block w-100" alt="Canyon at Nigh" />
             <div class="carousel-caption d-none d-md-block">
               <!-- <h5>Second slide label</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
@@ -273,7 +284,7 @@
 
           <!-- Single item -->
           <div class="carousel-item">
-            <img src="bundles/images/landing/bg-image.jpg" class="d-block w-100" alt="Cliff Above a Stormy Sea" />
+            <img src="bundles/images/landing/bg-image-3.png" class="d-block w-100" alt="Cliff Above a Stormy Sea" />
             <div class="carousel-caption d-none d-md-block">
               <!-- <h5>Third slide label</h5>
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
@@ -824,7 +835,7 @@
               </div>
             </div>
           </div>
-      
+
         </div>
         <div class="mt-4">
           <div>
@@ -892,6 +903,8 @@
           </div>
 
         </div>
+
+
         <div class="container my-5">
           <div class="row grid-2 text-white py-4">
             <div class="col-lg-4 mb-md-2">
@@ -909,25 +922,17 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="container py-2" style="background-color: #00659D;">
-              <div><img src="bundles/images/landing/blog-pics2.png" class="d-block w-100" alt=""></div>
-              <div>
-                <h6 class="my-4">Work at speed</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, iste. Rerum, labore omnis cupiditate
-                  quasi sapiente tenetur beatae inventore eligendi sit quos magnam sint earum amet repellat voluptas
-                  maxime possimus?</p>
-              </div>
-            </div> -->
+
             </div>
             <div class="col-lg-8">
               <div>
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="container d-flex py-2 row" style="background-color: #00659D;">
-                      <div class="col-6"><img src="bundles/images/landing/blog-pics1.png"
+                      <div class="col-lg-6"><img src="bundles/images/landing/blog-pics1.png"
                           class=" img-luid d-block w-100 h-100" alt="">
                       </div>
-                      <div class="col-6">
+                      <div class="col-lg-6">
                         <h6 class="my-4">Work at speed</h6>
                         <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
                           iste.
@@ -939,10 +944,10 @@
                   </div>
                   <div class="col-lg-6">
                     <div class="container d-flex py-2 row" style="background-color: #00659D;">
-                      <div class="col-6"><img src="bundles/images/landing/blog-pics3.png"
+                      <div class="col-lg-6"><img src="bundles/images/landing/blog-pics3.png"
                           class=" img-luid d-block w-100 h-100" alt="">
                       </div>
-                      <div class="col-6">
+                      <div class="col-lg-6">
                         <h6 class="my-4">Work at speed</h6>
                         <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
                           iste.
@@ -975,7 +980,61 @@
 
           </div>
         </div>
+
+
         <div class="container my-5">
+          <!-- <div class="">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="container">
+                  <div><img src="bundles/images/landing/blog-pics2.png" class="img-fluid d-block w-100 h-100" alt="">
+                  </div>
+                  <div>
+                    <h2>Work at speed</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab nam, autem nobis natus eius quidem
+                      impedit laborum accusantium consequuntur ipsa debitis. Exercitationem illum fugiat optio delectus
+                      quidem id repellendus ea.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-lg-6"><img src="bundles/images/landing/blog-pics2.png"
+                            class="img-fluid d-block w-100 h-100" alt=""></div>
+                        <div class="col-lg-6">
+                          <h2>work at speed</h2>
+                          <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi, ratione
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-lg-6"><img src="bundles/images/landing/blog-pics2.png"
+                            class="img-fluid d-block w-100 h-100" alt=""></div>
+                        <div class="col-lg-6">
+                          <h2>work at speed</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi, ratione </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6"><img src="bundles/images/landing/blog-pics2.png"
+                        class="img-fluid d-block w-100 h-100" alt=""></div>
+                    <div class="col-6">
+                      <h2>Work at speed</h2>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipLorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Dicta animi, ratione.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
           <div class="my-logo">
             <div><img src="bundles/images/landing/HIPSTER.png" alt=""></div>
             <div><img src="bundles/images/landing/VONDE.png" alt=""></div>
@@ -1146,7 +1205,7 @@
     </div>
 
     <!-- Copyright -->
-    <div class="text-center py-5 bg-white">
+    <div class="text-center pt-3 pb-5 bg-white">
       <strong> © 2023 gallery BEBE | All Rights Reserved</strong>
       <!-- <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
     </div>
@@ -1167,6 +1226,9 @@
      crossorigin="anonymous"></script> -->
   <!-- <script src="bundles/owlcarousel/owl.carousel.min.js"></script> -->
   <!-- <script src="bundles/js/bootstrap.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
