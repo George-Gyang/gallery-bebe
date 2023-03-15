@@ -28,246 +28,178 @@
 </head>
 
 <body>
-    <!-- Start your project here-->
-    <header class=" bg-dark fixd-top">
-        <!-- Jumbotron -->
-        <div class="header_top">
-            <div class="alert alert-dismissible fade show"
-                style="max-height: 50px; border-radius: 0px; background-color: #00659D;" role="alert">
-                <p class="text-center text-white"><strong>GET UPTO 40% OFF!</strong> <span class="d-none d-lg-inline">on
-                        your
-                        first Order</span> <a class="text-white" href="3">More details</a></p>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+ <!-- Start your project here-->
+ <header class=" fixd-top">
+    <!-- Jumbotron -->
+    <div class="header_top">
+      <div class="alert my-0 alert-dismissible fade show" style=" border-radius: 0px; background-color: #00659D;"
+        role="alert">
+        <p class="text-center mb-0 text-white"><strong>GET UPTO 40% OFF!</strong> <span class="d-none d-lg-inline">on
+            your
+            first Order</span> <a class="text-white" href="3">More details</a></p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </div>
+
+    <div class="py-1 bg-dark">
+      <div class="container-fluid d-flex justify-content-between align-items-center text-white">
+        <div>
+          <select style="border: black;" class="form-slect me-md-3 bg-dark text-white"
+            aria-label="Default select example">
+            <option selected>English</option>
+            <option value="1">French</option>
+            <option value="2">Poruguese</option>
+            <option value="3">Spanish</option>
+          </select>
+
+          <select style="border: black;" class="form-slect  bg-dark text-white" aria-label="Default select example">
+            <option selected>USD</option>
+            <option value="1">Naira</option>
+            <option value="2">Euros</option>
+            <option value="3">Pounds</option>
+          </select>
+        </div>
+        <div class="d-flex small-text justify-content-between">
+          <p class="d-none my-auto d-lg-block ">Collection point</p>
+          <p class="d-none my-auto d-lg-block mx-2">Welcome User</p>
+          <div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle me-md-3 bg-dark text-white" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                My Account
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="reg.html">Register</a></li>
+                <li><a class="dropdown-item" href="log.html">Log in</a></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
             </div>
+          </div>
         </div>
 
-        <div class=" bg-dark">
-            <div class="container d-flex justify-content-between align-items-center text-white">
-                <div>
-                    <select style="border: black;" class="form-slect me-md-3 bg-dark text-white"
-                        aria-label="Default select example">
-                        <option selected>English</option>
-                        <option value="1">French</option>
-                        <option value="2">Poruguese</option>
-                        <option value="3">Spanish</option>
-                    </select>
+      </div>
+    </div>
 
-                    <select style="border: black;" class="form-slect  bg-dark text-white"
-                        aria-label="Default select example">
-                        <option selected>USD</option>
-                        <option value="1">Naira</option>
-                        <option value="2">Euros</option>
-                        <option value="3">Pounds</option>
-                    </select>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="d-none d-lg-block ">Collection point</p>
-                    <p class="d-none d-lg-block mx-2">Welcome User</p>
-                    <div style="margin-top: -0.3rem;">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle me-md-3 bg-dark text-white" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                My Account
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="reg.html">Register</a></li>
-                                <li><a class="dropdown-item" href="log.html">Log in</a></li>
-                                <li><a class="dropdown-item" href="#">Sign out</a></li>
-                            </ul>
-                        </div>
-                        <!-- <select style="border: black;" class="form-slect me-md-3 bg-dark text-white"
-              aria-label="Default select example">
-              <option selected>My Account</option>
-              <option value="1"><a href="reg.html">Register</a></option>
-              <option value="2"><a href="log.html">Login</a></option>
-              <option value="3">Sign out</option>
-            </select> -->
-                    </div>
-                </div>
-
+    <div class="header_middle">
+      <div class="py-0 text-center border-bottom bg-white text-dark">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4 d-flex justify-content-center justify-content-md-start ps-lg-5 mb-3 mb-md-0">
+              <a href="#!" class="ms-md-2">
+                <img src="bundles/images/landing/gallery_logo.png" height="90" />
+              </a>
             </div>
-        </div>
 
-        <div class="header_middle">
-            <div class="py-2 text-center border-bottom bg-white text-dark">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
-                            <a href="#!" class="ms-md-2">
-                                <img src="bundles/images/landing/gallery_logo.png" height="70" />
-                            </a>
-                        </div>
+            <div class="col-md-4 mt-2">
+              <form class="d-flex mt-2 w-auto my-auto mb-3 mb-md-0">
+                <!-- <input autocomplete="off" type="search" class="form-control rounded" placeholder="Search" /> -->
+                <select style="border-radius: 0px;" class="form-select" aria-label="Default select example">
+                  <option selected>Search</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <span style="border-radius: 0px;" class="input-group-text pb-2 bg-primary  border-0 d-lg-flex"><i
+                    class="fas fa-search text-white"></i></span>
+              </form>
+            </div>
 
-                        <div class="col-md-4">
-                            <form class="d-flex mt-2 w-auto my-auto mb-3 mb-md-0">
-                                <!-- <input autocomplete="off" type="search" class="form-control rounded" placeholder="Search" /> -->
-                                <select style="border-radius: 0px;" class="form-select"
-                                    aria-label="Default select example">
-                                    <option selected>Search</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                                <span style="border-radius: 0px;"
-                                    class="input-group-text pb-2 bg-primary  border-0 d-lg-flex"><i
-                                        class="fas fa-search text-white"></i></span>
-                            </form>
-                        </div>
-
-                        <div class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
-                            <div class="d-flex">
+            <div class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
+              <div class="d-flex">
 
 
-                                <!-- Cart -->
-                                <p class="me-1">Add some items inside my bag</p>
-                                <div class="dropdown">
-                                    <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#"
-                                        id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <!-- <img src="/bundles/images/lit-icons/Icon.png" alt=""> -->
-                                        <img src="bundles/images/lit-icons/Icon.png" alt="">
+                <!-- Cart -->
+                <p class="me-1">Add some items inside my bag</p>
+                <div class="dropdown">
+                  <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                    <!-- <img src="/bundles/images/lit-icons/Icon.png" alt=""> -->
+                    <img src="bundles/images/lit-icons/Icon.png" style="margin-right: -1rem;" alt="">
 
-                                        <!-- <i class="fas fa-bag-shopping"></i> -->
-                                        <!-- <i class="fa-sharp fa-regular fa-bag-shopping"></i> -->
+                    <!-- <i class="fas fa-bag-shopping"></i> -->
+                    <!-- <i class="fa-sharp fa-regular fa-bag-shopping"></i> -->
 
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-end"
-                                        aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="#">check my cart</a></li>
-                                        <li><a class="dropdown-item" href="#">Clears</a></li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">New Order</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- Notification -->
-                                <a class="text-reset mt-2 me-3" href="#">
-                                    <img src="bundles/images/lit-icons/carts 1.png" alt="">
-                                    <!-- <span><i class="fas fa-shopping-cart"></i></span> -->
-                                    <!-- <span class="badge rounded-pill badge-notification bg-danger">1</span> -->
-                                </a>
-
-
-                                <!-- Languages -->
-                                <!-- <div class="dropdown bg-primary">
-                  <a class="text-reset dropdown-toggle me-3 hidden-arrow" href="#" id="navbarDropdown" role="button"
-                    data-mdb-toggle="dropdown" aria-expanded="false">
-                    <i class="united kingdom flag m-0"></i>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="united kingdom flag"></i>English
-                        <i class="fa fa-check text-success ms-2"></i></a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="poland flag"></i>Polski</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="china flag"></i>中文</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="japan flag"></i>日本語</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="germany flag"></i>Deutsch</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="france flag"></i>Français</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="spain flag"></i>Español</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="russia flag"></i>Русский</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="portugal flag"></i>Português</a>
-                    </li>
-                  </ul>
-                </div> -->
-
-                                <!-- User -->
-                                <!-- <div class="dropdown">
-                  <a class="text-reset dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
-                    id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                    <img src="https://mdbootstrap.com/img/new/avatars/1.jpg" class="rounded-circle" height="22" alt=""
-                      loading="lazy" />
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">My profile</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                    <li><a class="dropdown-item" href="#">check my cart</a></li>
+                    <li><a class="dropdown-item" href="#">Clears</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">New Order</a>
+                    </li>
                   </ul>
-                </div> -->
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <!-- <hr> -->
-            </div>
-        </div>
-        <!-- Jumbotron -->
 
-        <nav class="navbar navbar-expand-lg navbar-scroll bg-white shadow-0">
-            <div class="container">
-                <a class="navbar-brand d-lg-none" href="#">NEW IN</a>
-                <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="d-flex justify-content-start align-items-center">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </button>
-                <div class="collapse navbar-links navbar-collapse" id="navbarExample01">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link px-3" href="#!">NEW IN</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link px-3" href="#!">BATHING & CHANGING</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="#!">BABY SAFETY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="#!">FEEDING & WEANING</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link px-3" href="#!">TOYS & GIFT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="#!">BABY CARE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="#!">OFFER SETS & BUNDLES</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link px-3" href="#!">PARENTS ROOM</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="#!">BLOG</a>
-                        </li>
-                    </ul>
-                </div>
+                <!-- Notification -->
+                <a class="text-reset mt-2 me-3" href="#">
+                  <img src="bundles/images/lit-icons/carts 1.png" alt="">
+                  <!-- <span><i class="fas fa-shopping-cart"></i></span> -->
+                  <!-- <span class="badge rounded-pill badge-notification bg-danger">1</span> -->
+                </a>
+              </div>
             </div>
-        </nav>
-    </header>
+          </div>
+        </div>
+        <!-- <hr> -->
+      </div>
+    </div>
+    <!-- Jumbotron -->
+
+    <nav class="navbar navbar-expand-lg navbar-scroll bg-white shadow-0">
+      <div class="container-fluid">
+        <a class="navbar-brand d-lg-none" href="#">NEW IN</a>
+        <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="d-flex justify-content-start align-items-center">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-links navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav mx-auto my-3">
+            <li class="nav-item active">
+              <a class="nav-link px-3" href="#!">NEW IN</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link px-3" href="#!">BATHING & CHANGING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">BABY SAFETY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">FEEDING & WEANING</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link px-3" href="#!">TOYS & GIFT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">BABY CARE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">OFFER SETS & BUNDLES</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link px-3" href="#!">PARENTS ROOM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">BLOG</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
 
     <main>
-        <div class=" container main-body">
+        <div class=" container-fluid mx-0 main-body">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-7 ms-n5">
                     <!-- <div class="container"> -->
                     <img src="bundles/images/landing/blog-pics2.png" class="h-0 w-100" alt="">
                 </div>
                 <!-- </div> -->
-                <div class="col-md-5 ps-md-5">
+                <div class="container col-md-5">
                     <div>
-                        <h5 class="text-center text-dark mb-3 mt-5"><b>SIGN INTO YOUR ACCOUNT</b></h5>
+                        <h5 class="text-center text-dark mb-3 customize-font mt-5"><b>SIGN INTO YOUR ACCOUNT</b></h5>
                         <form class="row">
 
                             <div class="col-12 mb-4">

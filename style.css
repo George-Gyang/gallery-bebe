@@ -2,9 +2,32 @@ body {
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: Montserrat, sans-serif, "Franklin Gothic Medium";
 }
+.alert{
+  padding: 0.8rem 0px;
+}
 
-.flex-container {
+.btn-close{
+  height: 0px;
+}
+
+.small-text{
+  font-size: 12px !important;
+  font-weight: 900 !important;
+  color: white !important;
+  opacity: 1 !important;
+}
+/* .flex-container {
   box-sizing: border-box;
+} */
+
+customize-font {
+  font-family: "Montserrat" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 29px !important;
+
+  color: #000000;
 }
 
 .navbar-dark .nav-item .nav-link {
@@ -13,20 +36,22 @@ body {
 
 .navbar-links {
   /* font-size: 1rem; */
-  color: black;
-  font-weight: bold;
+  color: black !important;
+  /* font-weight: bold; */
   white-space: nowrap;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700 !important;
   font-size: 12px;
   line-height: 12px;
 }
 .nav-link {
   color: black;
+  /* font-size: large; */
+  /* padding: 0 0px; */
 }
 
-ul .nav-link{
-  font-weight:bolder;
+ul .nav-link {
+  font-weight: bolder;
   /* color: red; */
 }
 
@@ -127,7 +152,7 @@ ul .nav-link{
 .hovereffect .div,
 .hovereffect p {
   /* color: #fff; */
-  padding-top: 4em ;
+  padding-top: 4em;
   margin: auto;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -148,12 +173,12 @@ ul .nav-link{
 
 /* ENDS */
 
-.card-icons{
+.card-icons {
   display: flex;
   justify-content: space-around;
 }
 
-.card-icons div{
+.card-icons div {
   display: inline-block;
   background-color: white;
   height: fit-content;
@@ -218,15 +243,14 @@ footer {
   background-color: #ebf5fa;
 }
 
-.fw-bold{
+.fw-bold {
   font-weight: 900 !important;
   color: black !important;
 }
 
-
-.login-span{
+.login-span {
   font-size: 1.5rem;
-  font-weight:900;
+  font-weight: 900;
   padding-bottom: 1rem;
   color: black;
 }
@@ -263,9 +287,23 @@ footer {
   }
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1024px) {
   .navbar-links {
     white-space: normal;
     font-size: 10px;
+  }
+  .mode{
+    min-height: 530px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mode{
+    min-height: 530px;
+  }
+}
+@media (min-width: 1440px) {
+  .mode{
+    min-height: 520px;
   }
 }
