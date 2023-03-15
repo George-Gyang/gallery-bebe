@@ -81,6 +81,29 @@ var myLogo = tns({
     }
 });
 
+var myLogo2 = tns({
+    container: '.my-logo2',
+    items: 2,
+    edgePadding: 10,
+    gutter: 20,
+    autoplayTimeout:4000,
+    slideBy: 2,
+    autoplay: true,
+    autoplayButtonOutput : false,
+    autoplayPosition: "autoplay",
+    controlsPosition: "bottom",
+    navPosition: "bottom",
+    controls: false,
+    autoplayText:[ "▶","❚❚"],
+    responsive: {
+        700: {
+            // edgePadding: 2,
+            gutter: 10,
+            items: 8
+        }
+    }
+});
+
 // ALERT JS
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 

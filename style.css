@@ -1,16 +1,20 @@
 body {
   /* font-family: Arial, Helvetica, sans-serif; */
-  font-family: Montserrat, sans-serif, "Franklin Gothic Medium";
+  font-family: Montserrat, sans-serif, "Franklin Gothic Medium" !important;
 }
-.alert{
+.alert {
   padding: 0.8rem 0px;
 }
 
-.btn-close{
+.btn-close {
   height: 0px;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-xx-lg' viewBox='0 0 16 16'%3E%3Cpath d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z'/%3E%3C/svg%3E")
+    50%/1em auto no-repeat;
+    color: white;
 }
 
-.small-text{
+.small-text {
   font-size: 12px !important;
   font-weight: 900 !important;
   color: white !important;
@@ -82,6 +86,12 @@ ul .nav-link {
   /* background-image: url("bundles\images\landing\bg-image.jpg"); */
   background-image: url("bundles/images/landing/bg-image.jpg");
   background-size: cover;
+}
+
+.form-outline,
+.selecter {
+  border: 2px solid #3b71ca !important;
+  border-radius: 6px !important;
 }
 
 /* HOVER BEGINS */
@@ -292,18 +302,18 @@ footer {
     white-space: normal;
     font-size: 10px;
   }
-  .mode{
+  .mode {
     min-height: 530px;
   }
 }
 
 @media (min-width: 1024px) {
-  .mode{
+  .mode {
     min-height: 530px;
   }
 }
 @media (min-width: 1440px) {
-  .mode{
+  .mode {
     min-height: 520px;
   }
 }
