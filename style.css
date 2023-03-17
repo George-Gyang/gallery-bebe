@@ -269,7 +269,7 @@ ul .nav-link {
 }
 
 .icon-bg-1 {
-  background-color: #c24244;
+  background-color: #E0B9BA;
 }
 .icon-bg-2 {
   background-color: #a2c891;
@@ -287,12 +287,51 @@ ul .nav-link {
   background-color: #e0d597;
 }
 
+.adjust .container{
+  max-width: 1250px
+}
+
 .bold-type {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700 !important;
   font-size: 1.5rem !important;
   line-height: 2rem !important;
   color: black !important;
+}
+
+/* OTP SECTION */
+.otp-container{
+  display: flex;
+  justify-content: center;
+}
+
+.otp-container div{
+  margin-right: 1rem;
+}
+
+.otp-container input{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #00659D;
+  background-color: #FAFAFA;
+  border-radius: 5px;
+}
+
+.otp-resend{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.otp-btn-container{
+  width: fit-content;
+}
+
+.otp-btn-container button{
+  background-color: #00659D;
+  padding: 0.6rem 2.5rem;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #E6E6E6;
 }
 
 footer {
