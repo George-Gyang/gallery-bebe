@@ -1,26 +1,39 @@
-// alert("I'm connected!!")
-// $(document).ready(function(){
-//     $(".owl-carousel").owlCarousel();
-//   });
-// $('.owl-carousel').owlCarousel({
-//     loop: true,
-//     margin: 10,
-//     nav: true,
-//     responsive: {
-//         0: {
-//             items: 1
-//         },
-//         600: {
-//             items: 3
-//         },
-//         1000: {
-//             items: 5
-//         }
-//     }
-// })
-
-var slider = tns({
+var mySlider = tns({
     container: '.my-slider',
+    items: 2,
+    edgePadding: 10,
+    gutter: 20,
+    autoplayTimeout:4000,
+    slideBy: 2,
+    autoplay: true,
+    autoplayButtonOutput : false,
+    autoplayPosition: "autoplay",
+    controlsPosition: "bottom",
+    navPosition: "bottom",
+    controls: false,
+    autoplayText:[ "▶","❚❚"],
+    responsive: {
+        700: {
+            // edgePadding: 2,
+            gutter: 10,
+            items: 8
+        }
+    }
+});
+
+var mainslider = tns({
+    container: '.main-slider',
+    items: 1,
+    slideBy: 'page',
+    autoplay: true,
+    navPosition: "bottom",
+    controls: false,
+    autoplayButtonOutput : false
+  });
+
+
+var myLogo = tns({
+    container: '.my-logo',
     items: 1,
     edgePadding: 10,
     gutter: 20,
@@ -54,29 +67,6 @@ var sliderTwo = tns({
             // edgePadding: 10,
             gutter: 30,
             items: 6
-        }
-    }
-});
-
-var myLogo = tns({
-    container: '.my-logo',
-    items: 2,
-    edgePadding: 10,
-    gutter: 20,
-    autoplayTimeout:4000,
-    slideBy: 2,
-    autoplay: true,
-    autoplayButtonOutput : false,
-    autoplayPosition: "autoplay",
-    controlsPosition: "bottom",
-    navPosition: "bottom",
-    controls: false,
-    autoplayText:[ "▶","❚❚"],
-    responsive: {
-        700: {
-            // edgePadding: 2,
-            gutter: 10,
-            items: 8
         }
     }
 });
