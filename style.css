@@ -228,7 +228,7 @@ ul .nav-link {
   background-color: #00659d;
 }
 .footer-bg {
-  background-color: #23a6f0;
+  background-color: #00659d;
   color: white;
 }
 
@@ -452,9 +452,21 @@ footer {
 
 @media (min-width: 992px) {
   .mode {
-    min-height: 38.52rem;
+    min-height: 39.82rem;
   }
 }
+@media (min-width: 1062px) {
+  .mode {
+    min-height: 37.3rem;
+  }
+}
+
+@media (min-width: 1115px) {
+  .mode {
+    min-height: 35rem;
+  }
+}
+
 @media (min-width: 1200px) {
   .mode {
     min-height: 32.5rem;
@@ -463,6 +475,6 @@ footer {
 
 @media (min-width: 1400px) {
   .mode {
-    min-height: 34.9rem;
+    min-height: 32.5rem;
   }
 }
