@@ -411,9 +411,10 @@ footer {
   line-height: 15px;
 }
 
-/* .mode {
-  min-height: 37rem;
-} */
+#search-button:hover{
+  background-color: #252b42;
+  color: white;
+}
 
 @media (max-width: 768px) {
   .center-img {
