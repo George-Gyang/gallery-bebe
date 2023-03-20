@@ -84,7 +84,19 @@ ul .nav-link {
 }
 
 .hotspot {
-  font-size: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+.hotspot a {
+  color: black;
+  text-transform: uppercase;
+}
+
+.hotspot a:hover {
+  color: rgb(0 101 157);
+  opacity: 1;
 }
 
 .bg-image {
@@ -190,30 +202,48 @@ ul .nav-link {
 
 /* TINY-SLIDER CUSTOMIZATION */
 
-.tns-nav{
-  text-align: center;
-  margin: 1rem auto;
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
-.tns-nav button{
+@media (min-width: 1280px) {
+  #control-container {
+    max-width: 1280px;
+  }
+}
+.tns-nav {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.tns-nav button {
   height: 15px;
   width: 10px;
   margin-left: 5px;
+  border: 1px solid blue;
 }
 
-.tns-nav .tns-nav-active{
-  background-color: #00659D;
+.tns-nav .tns-nav-active {
+  background-color: #00659d;
 }
-.footer-bg{
-  background-color: #23A6F0;
+.footer-bg {
+  background-color: #23a6f0;
   color: white;
 }
 
-#tns2-ow{
+.sign-h4{
+  font-family: Arial, Helvetica;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+#tns2-ow {
   position: relative;
 }
 
-#tns2-ow .tns-nav{
+#tns2-ow .tns-nav {
   position: absolute;
   z-index: 99;
   bottom: 1rem;
@@ -221,7 +251,7 @@ ul .nav-link {
   text-align: start;
 }
 
-#my-slider-2-ow .tns-nav{
+#my-slider-2-ow .tns-nav {
   text-align: end !important;
 }
 
@@ -240,15 +270,17 @@ ul .nav-link {
 
 .dept-head-6 {
   color: #333333;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
 }
 
 .rating-btn {
   background-color: #252b42;
   border-radius: 90px;
   color: white;
-  margin-right: 1rem;
+  font-size: 10px;
+  /* margin-right: 1rem; */
 }
 
 .star {
@@ -259,7 +291,14 @@ ul .nav-link {
   background-color: #697dcb;
 }
 
-.work-text{
+.amount {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0 101 157);
+  opacity: 1;
+  font-weight: 700;
+}
+
+.work-text {
   font-size: 1rem;
   font-weight: 700;
 }
@@ -269,7 +308,7 @@ ul .nav-link {
 }
 
 .icon-bg-1 {
-  background-color: #E0B9BA;
+  background-color: #e0b9ba;
 }
 .icon-bg-2 {
   background-color: #a2c891;
@@ -287,8 +326,8 @@ ul .nav-link {
   background-color: #e0d597;
 }
 
-.adjust .container{
-  max-width: 1250px
+.adjust .container {
+  max-width: 1250px;
 }
 
 .bold-type {
@@ -300,38 +339,38 @@ ul .nav-link {
 }
 
 /* OTP SECTION */
-.otp-container{
+.otp-container {
   display: flex;
   justify-content: center;
 }
 
-.otp-container div{
+.otp-container div {
   margin-right: 1rem;
 }
 
-.otp-container input{
+.otp-container input {
   width: 40px;
   height: 40px;
   text-align: center;
-  border: 1px solid #00659D;
-  background-color: #FAFAFA;
+  border: 1px solid #00659d;
+  background-color: #fafafa;
   border-radius: 5px;
 }
 
-.otp-resend{
+.otp-resend {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.otp-btn-container{
+.otp-btn-container {
   width: fit-content;
 }
 
-.otp-btn-container button{
-  background-color: #00659D;
+.otp-btn-container button {
+  background-color: #00659d;
   padding: 0.6rem 2.5rem;
   color: white;
   border-radius: 5px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
 }
 
 footer {
@@ -348,12 +387,12 @@ footer {
   color: black !important;
 }
 
-.fw-bold + span{
+.fw-bold + span {
   font-size: 0.8rem;
 }
 
-.button-color{
-  background-color: #00659D ;
+.button-color {
+  background-color: #00659d;
   color: white;
   padding: 0.9rem 2.7rem;
 }
@@ -367,9 +406,9 @@ footer {
   color: black;
 }
 
-footer{
+footer {
   font-size: 14px;
-  line-height: 30px;
+  line-height: 15px;
 }
 
 /* .mode {
@@ -383,10 +422,10 @@ footer{
   .icon-body img {
     padding: 1rem;
   }
-  .hotspot {
+  /* .hotspot {
     font-size: 1rem;
     padding: 2rem 0px;
-  }
+  } */
   .slider-text {
     font-size: 0.8rem;
   }
@@ -396,7 +435,6 @@ footer{
   .dept-head-6 {
     font-size: 0.8rem;
   }
-
 }
 /* responsiveness */
 @media (max-width: 908px) {

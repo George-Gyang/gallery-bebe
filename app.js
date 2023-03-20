@@ -46,7 +46,7 @@ var myLogo = tns({
     responsive: {
         700: {
             edgePadding: 10,
-            gutter: 15,
+            gutter: 25,
             items: 4
         }
     }
