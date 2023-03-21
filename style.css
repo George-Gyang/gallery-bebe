@@ -232,7 +232,7 @@ ul .nav-link {
   color: white;
 }
 
-.sign-h4{
+.sign-h4 {
   font-family: Arial, Helvetica;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -373,6 +373,23 @@ ul .nav-link {
   border: 1px solid #e6e6e6;
 }
 
+/* DASHBOARD STYLES */
+
+.dashboard-items{
+  list-style: none;
+  line-height: 2rem;
+}
+
+.contact-header {
+  border: 1px solid #00659d;
+  border-bottom: none;
+  min-height: 3rem;
+}
+.contact-area {
+  min-height: 6rem;
+  border: 1px solid #00659d;
+}
+
 footer {
   background-color: #ebf5fa;
 }
@@ -411,7 +428,7 @@ footer {
   line-height: 15px;
 }
 
-#search-button:hover{
+#search-button:hover {
   background-color: #252b42;
   color: white;
 }
